@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
 
 * {
   box-sizing: border-box;
@@ -21,7 +21,7 @@ body {
   width: 90vw;
 }
 
-header{
+header {
   width: 100%;
   height: 8%;
   margin-bottom: 2.5rem;
@@ -31,18 +31,18 @@ nav {
   float: right;
 }
 
-ul{
+ul {
   display: flex;
   justify-content: space-around;
   list-style: none;
 }
 
-li{
+li {
   padding: 1rem;
   color: #c5c6ce;
 }
 
-.grid-container{
+.grid-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
@@ -50,8 +50,18 @@ li{
   height: 91.9%;
 }
 
-.image-span-2{
+.image-span-2 {
   grid-column: auto / span 2;
+}
+
+.image-span-2 > img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.new-section {
+  background-color: #00001a;
 }
 
 .attribution {
