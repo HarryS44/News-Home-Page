@@ -17,8 +17,8 @@ body {
 }
 
 .container {
-  height: 80vh;
-  width: 80vw;
+  height: 70vh;
+  width: 70vw;
 }
 
 header {
@@ -44,14 +44,14 @@ li {
 
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(3, 470px);
+  grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
   gap: 20px;
   height: 91.9%;
 }
 
 .image-span-2 {
-  grid-column: auto / span 2;
+  grid-column: span 2;
 }
 
 .image-span-2 > img {
@@ -64,7 +64,13 @@ li {
   display: flex;
   flex-flow: column;
   background-color: #00001a;
+  width: 95%;
   grid-row: auto / span 2;
+}
+
+hr{
+  width: 95%;
+  margin: auto;
 }
 
 .new-section > h1 {
@@ -85,6 +91,11 @@ h3 {
 .new-1, .new-2, .new-3 > p {
   color: #5d5f79;
   margin: 1rem;
+}
+
+.bright-picture > h1 {
+  font-size: 3.5rem;
+  width: 80%;
 }
 
 .attribution {
