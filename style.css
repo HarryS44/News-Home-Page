@@ -8,104 +8,63 @@
 }
 
 body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: column;
-  height: 100vh;
+  position: relative;
   background-color: #fffdfa;
+  height: 100vh;
+  width: 100vw;
 }
 
 .container {
-  height: 90vh;
-  width: 65vw;
+  position: absolute;
+  height: 80vh;
+  width: 80vw;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
+
+/*Styling for the header and navigation elements within the header tag*/
 
 header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   width: 100%;
-  height: 8%;
-  margin-bottom: 2.5rem;
-}
-
-nav {
-  float: right;
+  height: fit-content;
+  margin-bottom: 2rem;
 }
 
 ul {
-  display: flex;
-  justify-content: space-around;
+  display: inline-flex;
+  justify-content: space-evenly;
   list-style: none;
 }
 
 li {
-  padding: 1rem;
+  margin-left: 1.5rem;
+}
+
+a {
   color: #c5c6ce;
+  text-decoration: none;
 }
 
-.grid-container {
+main {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  gap: 20px;
-  height: 91.9%;
-}
-
-.image-span-2 {
-  grid-column: span 2;
-}
-
-.image-span-2 > img {
-  object-fit: cover;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(3, 1fr); 
+  gap: 10px; 
   height: 100%;
   width: 100%;
 }
 
-.new-section {
-  display: flex;
-  flex-flow: column;
-  background-color: #00001a;
-  width: 95%;
-  grid-row: auto / span 2;
+.main-img{
+  grid-row: 1 / span 4;
 }
 
-hr{
-  width: 85%;
-  margin: auto;
-  opacity: 0.2;
+img{
+  object-fit: cover;
+  max-width: 100%;
 }
 
-.new-section > h1 {
-  color: #e9ab53;
-  font-size: 2rem;
-  margin: 1.5rem;
-}
-
-.new-width{
-  width: 80%;
-}
-
-h3 {
-  color: #fff;
-}
-
-.new-1, .new-2, .new-3 > p {
-  color: #5d5f79;
-}
-
-.new-1, .new-2, .new-3 > h3 {
-  margin: 1rem;
-}
-
-.bright-picture > h1 {
-  font-size: 3.5rem;
-  width: 80%;
-}
-
-.attribution {
-  font-size: 11px;
-  text-align: center;
-}
-
-.attribution a {
-  color: hsl(228, 45%, 44%);
-}
+/* */
