@@ -5,6 +5,7 @@
   margin: 0;
   padding: 0;
   font-family: "Inter", sans-serif;
+  overflow: hidden;
 }
 
 body {
@@ -61,16 +62,16 @@ main {
   height: 100%;
   width: 100%;
 }
-
+/*Bug in this area*/
 .main-img {
+  height: 100%;
+  width: 100%;
   grid-column: 1 / span 8;
   grid-row: 1 / span 1;
 }
 
 .main-img > img {
-  height: 80%;
-  width: 100%;
-  overflow: hidden;
+  object-fit: contain;
 }
 
 .new-section {
@@ -80,7 +81,7 @@ main {
 
 .new-content-container {
   background-color: #00001a;
-  height: 90%;
+  height: 100%;
   width: 100%;
 }
 
@@ -114,7 +115,7 @@ hr {
 }
 
 .main-article-heading > h1 {
-  font-size: 3.5rem;
+  font-size: 4rem;
   font-weight: 800;
 }
 
@@ -123,13 +124,13 @@ hr {
 }
 
 .main-article-info {
-  width: 45%;
+  width: 38%;
   margin-top: 0.6rem;
 }
 
 .red-rectangle {
   position: relative;
-  top: 30%;
+  top: 35%;
   display: flex;
   justify-content: center;
   align-items: center;
