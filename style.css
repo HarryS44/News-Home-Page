@@ -45,7 +45,7 @@ li {
   margin-left: 1.5rem;
 }
 
-a:hover{
+a:hover {
   color: #f15e50;
 }
 
@@ -95,7 +95,7 @@ main {
   margin: 1.2rem;
 }
 
-.new-content-container > h4:hover{
+.new-content-container > h4:hover {
   color: #e9ab53;
 }
 .new-content-container > p {
@@ -145,7 +145,7 @@ hr {
   width: 50%;
 }
 
-.red-rectangle:hover{
+.red-rectangle:hover {
   background-color: #000;
 }
 
@@ -161,3 +161,16 @@ hr {
 
 /*Styling for the numbered articles at the bottom of the page*/
 
+.numbered-articles {
+  grid-row: 10 / span 2;
+  grid-column:1 /  span 11;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.article-sizing {
+  width: 30%;
+  height: 100%;
+}
